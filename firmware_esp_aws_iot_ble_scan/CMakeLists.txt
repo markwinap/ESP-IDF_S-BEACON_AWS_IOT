@@ -3,5 +3,5 @@
 cmake_minimum_required(VERSION 3.5)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-set (EXTRA_COMPONENT_DIRS "../..")
-project(subscribe_publish)
+set (EXTRA_COMPONENT_DIRS "../esp-aws-iot")
+project(esp_aws_iot_ble_scan)

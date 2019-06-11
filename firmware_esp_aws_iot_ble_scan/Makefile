@@ -3,9 +3,9 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := subscribe_publish
+PROJECT_NAME := esp_aws_iot_ble_scan
 
-EXTRA_COMPONENT_DIRS := $(realpath ../..)
+EXTRA_COMPONENT_DIRS := $(realpath ../esp-aws-iot)
 
 include $(IDF_PATH)/make/project.mk
 

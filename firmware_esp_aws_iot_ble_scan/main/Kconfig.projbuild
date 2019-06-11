@@ -1,4 +1,28 @@
-menu "Example Configuration"
+menu "!!!Configuration Settings!!!"
+
+config VERSION
+    string "MAJOR.MINOR.PATCH"
+    default "2.0.0"
+    help
+        Major, Minor, PATCH release version.
+
+    config BLE_TIMER
+        int "BLE BUFF TIMMER"
+        default 300000
+        help
+            BLE BUFF TIMMER TICKS
+
+    config BLE_INTERVAL
+        hex "BLE INTERVAL"
+        default 0x50
+        help
+            HEX * 0.625 msec MIN 0x0004 MAX 0x4000 - 50 msec
+
+    config BLE_WINDOW
+        hex "BLE WINDOW (LOWER THEN INTERVAL)"
+        default 0x30
+        help
+            HEX * 0.625 msec MIN 0x0004 MAX 0x4000 - 50 msec
 
     config WIFI_SSID
         string "WiFi SSID"

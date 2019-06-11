@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "app_awsiot.h": "c",
+        "string.h": "c",
+        "app_ble.h": "c"
+    }
+}
